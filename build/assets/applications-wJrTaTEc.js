@@ -1,0 +1,1 @@
+import{S as e,P as i}from"./pagination-DRnoI_WA.js";new e(".applications-swiper",{modules:[i],slidesPerView:1,spaceBetween:30,pagination:{el:".applications-pagination",clickable:!0},breakpoints:{480:{slidesPerView:2,spaceBetween:30},640:{slidesPerView:3,spaceBetween:40},900:{slidesPerView:4,spaceBetween:40}}});

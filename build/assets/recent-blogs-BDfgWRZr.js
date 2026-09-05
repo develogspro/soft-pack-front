@@ -1,0 +1,1 @@
+import{S as e,P as i}from"./pagination-DRnoI_WA.js";new e(".recent-blogs-swiper",{modules:[i],slidesPerView:1,spaceBetween:30,breakpoints:{480:{slidesPerView:2,spaceBetween:30},640:{slidesPerView:2,spaceBetween:40},900:{slidesPerView:3,spaceBetween:40}},pagination:{el:".recent-blogs-pagination",clickable:!0}});

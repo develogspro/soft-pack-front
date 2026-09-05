@@ -1,0 +1,1 @@
+(()=>{var o=document.querySelectorAll(".scroller");window.matchMedia("(prefers-reduced-motion: reduce)").matches||n();function n(){o.forEach(e=>{e.setAttribute("data-animated",!0);let r=e.querySelector(".scroller__inner");Array.from(r.children).forEach(c=>{let t=c.cloneNode(!0);t.setAttribute("aria-hidden",!0),r.appendChild(t)})})}})();

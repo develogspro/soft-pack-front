@@ -1,0 +1,210 @@
+:root {
+    --softpack-magenta: #c5227d;
+    --softpack-blue: #168fc2;
+    --softpack-cyan: #20b7c4;
+    --softpack-green: #8bc53f;
+    --softpack-yellow: #f5d83b;
+    --softpack-orange: #f36a3f;
+    --softpack-navy: #163a52;
+    --softpack-light: #f4fbfd;
+    --softpack-gradient: linear-gradient(120deg, #168fc2 0%, #20b7c4 24%, #8bc53f 43%, #f5d83b 61%, #f36a3f 77%, #c5227d 100%);
+
+    --color-1: var(--softpack-magenta) !important;
+    --color-2: var(--softpack-orange) !important;
+    --color-3: var(--softpack-navy) !important;
+    --color-4: var(--softpack-green) !important;
+    --color-5: #2f566c !important;
+    --color-6: #102a3a !important;
+    --color-7: #ffffff !important;
+    --color-8: var(--softpack-light) !important;
+    --color-9: var(--softpack-blue) !important;
+}
+
+html {
+    accent-color: var(--softpack-magenta);
+}
+
+body {
+    color: #163a52;
+    background: linear-gradient(180deg, #ffffff 0%, #f7fcfd 58%, #f1f9fc 100%);
+}
+
+header.sticky {
+    border-top: 4px solid transparent;
+    border-image: var(--softpack-gradient) 1;
+    background: rgba(255, 255, 255, 0.97) !important;
+    box-shadow: 0 10px 35px rgba(22, 58, 82, 0.12) !important;
+}
+
+.softpack-header-logo {
+    width: 64px !important;
+    height: 64px !important;
+    max-width: 64px !important;
+    object-fit: cover !important;
+    border-radius: 14px;
+    background: #fff;
+}
+
+a:has(> .softpack-header-logo) {
+    color: var(--softpack-navy);
+}
+
+.softpack-header-logo {
+    display: inline-block;
+    margin-inline-end: 12px;
+    vertical-align: middle;
+}
+
+a:has(> .softpack-header-logo)::after {
+    content: "SOFT PACK";
+    font-family: "Figtree", sans-serif;
+    font-size: clamp(1rem, 1.45vw, 1.55rem);
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    color: var(--softpack-navy);
+}
+
+html[dir="rtl"] a:has(> .softpack-header-logo)::after {
+    content: "سوفت باك";
+    font-family: "Almarai", "Tajawal", sans-serif;
+    letter-spacing: 0;
+}
+
+.softpack-footer-logo {
+    width: 92px !important;
+    height: 92px !important;
+    max-width: 92px !important;
+    object-fit: cover !important;
+    border-radius: 18px;
+    background: #fff;
+    padding: 4px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+footer .softpack-footer-logo + div::before {
+    content: "SOFT PACK";
+    display: block;
+    margin-bottom: 12px;
+    font-family: "Figtree", sans-serif;
+    font-size: 1.55rem;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    color: #fff;
+}
+
+html[dir="rtl"] footer .softpack-footer-logo + div::before {
+    content: "سوفت باك";
+    font-family: "Almarai", "Tajawal", sans-serif;
+    letter-spacing: 0;
+}
+
+footer > div:first-child,
+footer .bg-\[--color-3\] {
+    background: linear-gradient(135deg, #102a3a 0%, #163a52 58%, #125f7c 100%) !important;
+}
+
+/* Old affiliate marks are not part of the SOFT PACK identity. */
+footer a:has(img[src*="/footer/softpack.svg"]),
+footer a[href*="fefco.org"] {
+    display: none !important;
+}
+
+a[aria-disabled="true"] {
+    cursor: default;
+    opacity: 0.55;
+}
+
+.custom-white-bg-with-shadow,
+.rounded-b-\[20px\]\.shadow-2xl {
+    border: 1px solid rgba(22, 143, 194, 0.12);
+    box-shadow: 0 18px 50px rgba(22, 58, 82, 0.13) !important;
+}
+
+.custom-banner-button,
+.active-tab,
+button[type="submit"],
+input[type="submit"],
+#cookie-consent button {
+    color: #fff !important;
+    border-color: transparent !important;
+    background: linear-gradient(110deg, var(--softpack-blue), var(--softpack-magenta)) !important;
+    box-shadow: 0 9px 24px rgba(197, 34, 125, 0.2);
+}
+
+.custom-banner-button:hover,
+button[type="submit"]:hover,
+input[type="submit"]:hover,
+#cookie-consent button:hover {
+    filter: brightness(1.07);
+    transform: translateY(-1px);
+}
+
+[class*="bg-[#C5227D]"],
+[class*="bg-[#F36A3F]"] {
+    background: linear-gradient(110deg, var(--softpack-blue), var(--softpack-magenta)) !important;
+}
+
+[class*="text-[#C5227D]"],
+[class*="text-[#F36A3F]"] {
+    color: var(--softpack-magenta) !important;
+}
+
+[class*="border-[#C5227D]"],
+[class*="border-[#F36A3F]"] {
+    border-color: var(--softpack-magenta) !important;
+}
+
+[class*="bg-[#DDEFF5]"],
+[class*="bg-[#F2FAFC]"],
+[class*="bg-[#F7FBFD]"] {
+    background-color: #edf7fa !important;
+}
+
+.section-title,
+.titles-font {
+    text-wrap: balance;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--softpack-magenta) !important;
+    box-shadow: 0 0 0 3px rgba(197, 34, 125, 0.15);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--softpack-magenta) !important;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid rgba(22, 143, 194, 0.35);
+    outline-offset: 3px;
+}
+
+::selection {
+    color: #fff;
+    background: var(--softpack-magenta);
+}
+
+@media (max-width: 600px) {
+    .softpack-header-logo {
+        width: 46px !important;
+        height: 46px !important;
+        max-width: 46px !important;
+        border-radius: 11px;
+    }
+
+    a:has(> .softpack-header-logo)::after {
+        font-size: 0.95rem;
+    }
+
+    .softpack-footer-logo {
+        width: 76px !important;
+        height: 76px !important;
+        max-width: 76px !important;
+    }
+}

@@ -1,0 +1,1 @@
+.download-overlay{position:absolute;top:0;left:0;height:100%;width:100%;background:#0009;opacity:0;pointer-events:none;display:flex;justify-content:center;align-items:center}.download-img:hover>.download-overlay{opacity:1;pointer-events:auto}
